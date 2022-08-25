@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - F8-Redesign</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body onload="config()">
+<div id="wrapper">
+  
+  <div id="wrappermenu">
+    <h1>F8GEN</h1>
+    <ul>
+      <li onclick="config()" id="menu_config"><a>Konfiguration</a></li>
+      <li>Backoffice</li>
+      <li onclick="call()" id="menu_call"><a>Call</a></li>
+      <li onclick="admin()" id="menu_admin">Admin</li>
+    </ul>    
+  </div>
+
+  <div id="wrappercontent">
+    
+    <!--] KONFIGURATION START [-->
+    <div id="wrapperformular_config">
+      <h1>Deine F8 - Konfiguration</h1>
+      <div class="wrapperf8">
+
+      <div id="content_config">
+        <div class="inputbox">
+          <p>Name</p>
+          <br>
+          <input class="inputform" type="text" id="inputname">
+        </div>
+        <div class="inputbox">
+          <p>Team</p>
+          <br>
+          <input class="inputform" type="text" id="inputteam"> 
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <!--] KONFIGURATION ENDE [-->
+    
+    
+    <!--] F8 CALL START [-->
+    <div id="wrapperformular_call">
+      <h1>Deine F8 - Call</h1>
+      <div class="wrapperf8">
+
+      <div id="content_call">
+        <div class="smallbox">
+          <p>Anliegen</p>
+          <br>
+          <textarea id="anliegen1" class="smallboxes"></textarea>
+        </div>
+        <div class="smallbox">
+          <p>Umsetzung</p>
+          <br>
+          <textarea id="umsetzung1" class="smallboxes"></textarea>
+        </div>
+         <div class="smallbox">
+          <p>Vereinbarung</p>
+          <br>
+          <textarea id="vereinbarung1" class="smallboxes"></textarea>
+        </div>
+        <div class="bigbox">
+          <p>F8</p>
+          <br>
+          <textarea id="f8ausgabe_call" class="bigboxes"></textarea>
+        </div>
+      </div>
+
+      <div id="button_call"><button id="berstellen_call">Erstellen und kopieren</button></div>
+    </div>
+    </div>
+    <!--] F8 CALL ENDE [-->
+    
+     <!--] F8 ADMIN START [-->
+    <div id="wrapperformular_admin">
+      <h1>Deine F8 - Admin</h1>
+      <div class="wrapperf8">
+
+      <div id="content_admin">
+        <div class="smallbox">
+          <p>Anliegen</p>
+          <br>
+          <textarea id="anliegen_admin" class="smallboxes"></textarea>
+        </div>
+        <div class="bigbox">
+          <p>F8</p>
+          <br>
+          <textarea id="f8ausgabe_admin" class="bigboxes"></textarea>
+        </div>
+      </div>
+
+      <div id="button_admin"><button id="berstellen_admin">Erstellen und kopieren</button></div>
+    </div>
+    </div>
+    <!--] F8 ADMIN ENDE [-->
+    
+  </div>
+  
+</div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
